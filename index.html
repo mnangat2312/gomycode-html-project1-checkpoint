@@ -4,21 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emmanuel Mnangat - Portfolio</title>
+    <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
     <!-- header -->
     <header>
-      <h1>Emmanuel Mnangat</h1>
-      <nav>
+      <div class="myname">
+        <h1>Emmanuel Mnangat</h1>
+      </div>
+      <!-- container -->
+      <div class="container">
         <!-- unordered list -->
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#work">Work</a></li>
-          <li><a href="#resume">Resume</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <div class="box" id="box1">
+            <li><a href="#home">Home</a></li>
+          </div>
+          <div class="box" id="box2">
+            <li><a href="#about">About</a></li>
+          </div>
+          <div class="box" id="box3">
+            <li><a href="#work">Work</a></li>
+          </div>
+          <div class="box" id="box4">
+            <li><a href="#resume">Resume</a></li>
+          </div>
+          <div class="box" id="box5">
+            <li><a href="#contact">Contact</a></li>
+          </div>
         </ul>
-      </nav>
+      </div>
     </header>
     <!-- main -->
     <main>
@@ -28,21 +42,29 @@
       <section id="about">
         <h2>About Me</h2>
         <p>
-          I gained experience from the rigorous coursework in Electrical and
-          Communications Engineering at Multimedia University of Kenya. I am
-          also a Junior Developer at GOMYCODE
+          I am <strong>Emmanuel Rotich Mnangat</strong>, an
+          <strong>engineer</strong> by profession and a
+          <strong>junior web developer</strong>. I am from West Pokot County,
+          also a very ambitious person with big dreams.
         </p>
         <p>
-          My skills were sharpened even further at Kengen Power Station as i
-          took part in internship there.
+          I gained experience from the rigorous coursework in
+          <strong>Electrical and Communications Engineering</strong> at
+          Multimedia University of Kenya. I am also a Junior Developer at
+          <strong>GOMYCODE</strong>
         </p>
         <p>
-          I have a strong passion in electrical work, i'm a problem solver and i
+          My skills were sharpened even further at
+          <strong>Kengen Power Station</strong> as i took part in internship
+          there.
+        </p>
+        <p>
+          I have a strong passion in electrical work, I'm a problem solver and I
           value teamwork
         </p>
         <h3>Education Background</h3>
         <p>
-          I gained Second Class lower division at Multimedia University of
+          I gained Second Class-lower division at Multimedia University of
           Kenya.
         </p>
         <p>
@@ -72,7 +94,7 @@
       <section id="resume">
         <!-- heading -->
         <h2>Resume</h2>
-        <a href="./resume/first resume.pdf">my resume</a>
+        <a href="./resume/first resume.pdf">Click here</a>
       </section>
       <section id="contact">
         <!-- heading -->
@@ -83,15 +105,11 @@
         <h3>How you can reach me.</h3>
         <!-- contact form -->
         <form>
-          <h4>Contact Form</h4>
+          <h4><strong>Contact Form</strong></h4>
 
           <p>
-            <label>First Name</label>
+            <label>Full Names</label>
             <input placeholder="e.g Mark" name="firstName" id="firstName" />
-          </p>
-          <p>
-            <label>Last Name</label>
-            <input name="lastName" id="lastName" />
           </p>
 
           <p>
@@ -103,6 +121,9 @@
               Message <br />
               <textarea name="message" cols="40" rows="10" width=""> </textarea>
             </label>
+          </p>
+          <p>
+            <button type="submit">Submit</button>
           </p>
         </form>
       </section>
